@@ -8,6 +8,11 @@ TagManager:
   - SwipeLeft
   - SwipeRight
   - SwipeUp
+  - SlowMotion
+  - FinishLine
+  - LevelCount
+  - CurrentLevel
+  - NextLevel
   layers:
   - Default
   - TransparentFX

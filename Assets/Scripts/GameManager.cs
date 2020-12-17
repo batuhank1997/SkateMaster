@@ -7,8 +7,11 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public GameObject player;
+    public GameObject levelCompleteUI;
+
     public float playerSpeed;
     public bool isGameStart;
+    public bool isLevelComplete;
     public PlayableDirector timeline;
 
 
@@ -25,7 +28,10 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+        if (isLevelComplete)
+        {
+            levelCompleteUI.SetActive(true);
+        }
     }
 
     public void StartTimeline()
@@ -36,6 +42,7 @@ public class GameManager : MonoBehaviour
     }
     public void Restart()
     {
+        Debug.Log("restart");
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 

@@ -9,14 +9,18 @@ public class Player : MonoBehaviour
     public Animator cameraAnim;
     public Animator skateboardAnim;
     public GameObject restartUI;
+    public GameObject replayObj;
     public Camera mainCam;
+    public GameObject model;
+
+    public GameObject[] awesomeObjs;
 
     private bool QTESucceed;
     private bool inClick;
     private bool inSwipeU;
     private bool inSwipeL;
     private bool inSwipeR;
-
+    int i = 0;
     private bool click, swipeLeft, swipeRight, swipeUp, swipeDown, isDraging;
     private Vector2 startTouch, swipeDelta;
 
@@ -29,11 +33,13 @@ public class Player : MonoBehaviour
     public GameObject swipeRQTE;
     public GameObject swipeLQTE;
     public GameObject swipeUQTE;
+    public GameObject finishObj;
 
     // Start is called before the first frame update
     void Start()
     {
         GameManager.I.player = gameObject;
+        //awesomeObjs = new GameObject[6];
         rb = GetComponent<Rigidbody>();
     }
     private void Reset()
@@ -104,6 +110,8 @@ public class Player : MonoBehaviour
                 inClick = false;
                 QTESucceed = true;
                 clickQTE.SetActive(false);
+                AwesomeUI();
+
             }
         } 
         else if (inSwipeU == true)
@@ -116,6 +124,8 @@ public class Player : MonoBehaviour
                 inSwipeU = false;
                 QTESucceed = true;
                 swipeUQTE.SetActive(false);
+                AwesomeUI();
+
             }
         } 
         else if (inSwipeL == true)
@@ -127,6 +137,8 @@ public class Player : MonoBehaviour
                 inSwipeL = false;
                 QTESucceed = true;
                 swipeLQTE.SetActive(false);
+                AwesomeUI();
+
             }
         } 
         else if (inSwipeR == true)
@@ -138,6 +150,7 @@ public class Player : MonoBehaviour
                 inSwipeR = false;
                 QTESucceed = true;
                 swipeRQTE.SetActive(false);
+                AwesomeUI();
             }
         }
     }
@@ -175,6 +188,15 @@ public class Player : MonoBehaviour
             swipeUQTE.SetActive(true);
 
         }
+        else if (other.gameObject.tag == "FinishLine")
+        {
+            i += 1;
+            if(i == 2)
+            {
+                finishObj.SetActive(true);
+                StartCoroutine(Wait());
+            }
+        }
     }
 
     private void OnTriggerExit(Collider other)
@@ -198,6 +220,8 @@ public class Player : MonoBehaviour
                 mainCam.GetComponent<Animator>().enabled = false;
                 mainCam.GetComponent<CameraFollow>().enabled = true;
 
+                MoveToLayer(model.transform, 0);
+
                 clickQTE.SetActive(false);
                 swipeRQTE.SetActive(false);
                 swipeLQTE.SetActive(false);
@@ -205,6 +229,8 @@ public class Player : MonoBehaviour
 
                 StartCoroutine(Restart());
             }
+            
+                
             Destroy(other.gameObject);
         }
     }
@@ -214,7 +240,30 @@ public class Player : MonoBehaviour
         yield return new WaitForSeconds(2);
         restartUI.SetActive(true);
     }
+    public void MoveToLayer(Transform root, int layer)
+    {
+        root.gameObject.layer = 0;
+        foreach (Transform child in root)
+            MoveToLayer(child, 0);
+    }
+    void AwesomeUI()
+    {
+        int random = Random.Range(0, 5);
+        awesomeObjs[random].SetActive(true);
+        StartCoroutine(Wait(awesomeObjs[random]));
+    }
+    IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(1.8f);
 
+        replayObj.SetActive(true);
+    }
+    IEnumerator Wait(GameObject obj)
+    {
+        yield return new WaitForSeconds(1);
+
+        obj.SetActive(false);
+    }
     public static Vector3 GetWorldPos(Vector2 screenPos)
     {
         Ray ray = Camera.main.ScreenPointToRay(screenPos);

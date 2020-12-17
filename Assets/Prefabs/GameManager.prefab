@@ -44,6 +44,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  levelCompleteUI: {fileID: 0}
   playerSpeed: 20
   isGameStart: 0
+  isLevelComplete: 0
   timeline: {fileID: 0}

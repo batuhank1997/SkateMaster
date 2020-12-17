@@ -1,98 +1,272 @@
 fileFormatVersion: 2
 guid: 7ff775b3f526e604492ad135b63aee4c
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: Arm.L
-    100002: Arm.R
-    100004: Clavicle.L
-    100006: Clavicle.R
-    100008: Fingers.L
-    100010: Fingers.R
-    100012: Fingertips.L
-    100014: Fingertips.L_end
-    100016: Fingertips.R
-    100018: Fingertips.R_end
-    100020: Foot.L
-    100022: Foot.R
-    100024: Forearm.L
-    100026: Forearm.R
-    100028: Hand.L
-    100030: Hand.R
-    100032: Head
-    100034: Head_end
-    100036: Hips
-    100038: Neck
-    100040: Quad.L
-    100042: Quad.R
-    100044: Root
-    100046: Shin.L
-    100048: Shin.R
-    100050: Spine_01
-    100052: Spine_02
-    100054: Spine_03
-    100056: //RootNode
-    100058: Thumb.L
-    100060: Thumb.R
-    100062: Thumb_Tip.L
-    100064: Thumb_Tip.L_end
-    100066: Thumb_Tip.R
-    100068: Thumb_Tip.R_end
-    100070: Toes.L
-    100072: Toes.L_end
-    100074: Toes.R
-    100076: Toes.R_end
-    100078: TCP_Male_Armature
-    400000: Arm.L
-    400002: Arm.R
-    400004: Clavicle.L
-    400006: Clavicle.R
-    400008: Fingers.L
-    400010: Fingers.R
-    400012: Fingertips.L
-    400014: Fingertips.L_end
-    400016: Fingertips.R
-    400018: Fingertips.R_end
-    400020: Foot.L
-    400022: Foot.R
-    400024: Forearm.L
-    400026: Forearm.R
-    400028: Hand.L
-    400030: Hand.R
-    400032: Head
-    400034: Head_end
-    400036: Hips
-    400038: Neck
-    400040: Quad.L
-    400042: Quad.R
-    400044: Root
-    400046: Shin.L
-    400048: Shin.R
-    400050: Spine_01
-    400052: Spine_02
-    400054: Spine_03
-    400056: //RootNode
-    400058: Thumb.L
-    400060: Thumb.R
-    400062: Thumb_Tip.L
-    400064: Thumb_Tip.L_end
-    400066: Thumb_Tip.R
-    400068: Thumb_Tip.R_end
-    400070: Toes.L
-    400072: Toes.L_end
-    400074: Toes.R
-    400076: Toes.R_end
-    400078: TCP_Male_Armature
-    7400000: TCP_Male_Idle_01
-    7400002: TCP_Male_Armature|1
-    7400004: TCP_Male_Armature|SUPRA_9542|C4D Animation Take|Layer0
-    7400006: TCP_Male_Idle_01
-    7400008: TCP_Male_Armature|TCP_Male_Idle_01 (1)
-    9500000: //RootNode
-    2186277476908879412: ImportLogs
+  serializedVersion: 19300
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Arm.L
+  - first:
+      1: 100002
+    second: Arm.R
+  - first:
+      1: 100004
+    second: Clavicle.L
+  - first:
+      1: 100006
+    second: Clavicle.R
+  - first:
+      1: 100008
+    second: Fingers.L
+  - first:
+      1: 100010
+    second: Fingers.R
+  - first:
+      1: 100012
+    second: Fingertips.L
+  - first:
+      1: 100014
+    second: Fingertips.L_end
+  - first:
+      1: 100016
+    second: Fingertips.R
+  - first:
+      1: 100018
+    second: Fingertips.R_end
+  - first:
+      1: 100020
+    second: Foot.L
+  - first:
+      1: 100022
+    second: Foot.R
+  - first:
+      1: 100024
+    second: Forearm.L
+  - first:
+      1: 100026
+    second: Forearm.R
+  - first:
+      1: 100028
+    second: Hand.L
+  - first:
+      1: 100030
+    second: Hand.R
+  - first:
+      1: 100032
+    second: Head
+  - first:
+      1: 100034
+    second: Head_end
+  - first:
+      1: 100036
+    second: Hips
+  - first:
+      1: 100038
+    second: Neck
+  - first:
+      1: 100040
+    second: Quad.L
+  - first:
+      1: 100042
+    second: Quad.R
+  - first:
+      1: 100044
+    second: Root
+  - first:
+      1: 100046
+    second: Shin.L
+  - first:
+      1: 100048
+    second: Shin.R
+  - first:
+      1: 100050
+    second: Spine_01
+  - first:
+      1: 100052
+    second: Spine_02
+  - first:
+      1: 100054
+    second: Spine_03
+  - first:
+      1: 100056
+    second: //RootNode
+  - first:
+      1: 100058
+    second: Thumb.L
+  - first:
+      1: 100060
+    second: Thumb.R
+  - first:
+      1: 100062
+    second: Thumb_Tip.L
+  - first:
+      1: 100064
+    second: Thumb_Tip.L_end
+  - first:
+      1: 100066
+    second: Thumb_Tip.R
+  - first:
+      1: 100068
+    second: Thumb_Tip.R_end
+  - first:
+      1: 100070
+    second: Toes.L
+  - first:
+      1: 100072
+    second: Toes.L_end
+  - first:
+      1: 100074
+    second: Toes.R
+  - first:
+      1: 100076
+    second: Toes.R_end
+  - first:
+      1: 100078
+    second: TCP_Male_Armature
+  - first:
+      4: 400000
+    second: Arm.L
+  - first:
+      4: 400002
+    second: Arm.R
+  - first:
+      4: 400004
+    second: Clavicle.L
+  - first:
+      4: 400006
+    second: Clavicle.R
+  - first:
+      4: 400008
+    second: Fingers.L
+  - first:
+      4: 400010
+    second: Fingers.R
+  - first:
+      4: 400012
+    second: Fingertips.L
+  - first:
+      4: 400014
+    second: Fingertips.L_end
+  - first:
+      4: 400016
+    second: Fingertips.R
+  - first:
+      4: 400018
+    second: Fingertips.R_end
+  - first:
+      4: 400020
+    second: Foot.L
+  - first:
+      4: 400022
+    second: Foot.R
+  - first:
+      4: 400024
+    second: Forearm.L
+  - first:
+      4: 400026
+    second: Forearm.R
+  - first:
+      4: 400028
+    second: Hand.L
+  - first:
+      4: 400030
+    second: Hand.R
+  - first:
+      4: 400032
+    second: Head
+  - first:
+      4: 400034
+    second: Head_end
+  - first:
+      4: 400036
+    second: Hips
+  - first:
+      4: 400038
+    second: Neck
+  - first:
+      4: 400040
+    second: Quad.L
+  - first:
+      4: 400042
+    second: Quad.R
+  - first:
+      4: 400044
+    second: Root
+  - first:
+      4: 400046
+    second: Shin.L
+  - first:
+      4: 400048
+    second: Shin.R
+  - first:
+      4: 400050
+    second: Spine_01
+  - first:
+      4: 400052
+    second: Spine_02
+  - first:
+      4: 400054
+    second: Spine_03
+  - first:
+      4: 400056
+    second: //RootNode
+  - first:
+      4: 400058
+    second: Thumb.L
+  - first:
+      4: 400060
+    second: Thumb.R
+  - first:
+      4: 400062
+    second: Thumb_Tip.L
+  - first:
+      4: 400064
+    second: Thumb_Tip.L_end
+  - first:
+      4: 400066
+    second: Thumb_Tip.R
+  - first:
+      4: 400068
+    second: Thumb_Tip.R_end
+  - first:
+      4: 400070
+    second: Toes.L
+  - first:
+      4: 400072
+    second: Toes.L_end
+  - first:
+      4: 400074
+    second: Toes.R
+  - first:
+      4: 400076
+    second: Toes.R_end
+  - first:
+      4: 400078
+    second: TCP_Male_Armature
+  - first:
+      74: 7400000
+    second: TCP_Male_Idle_01
+  - first:
+      74: 7400002
+    second: TCP_Male_Armature|1
+  - first:
+      74: 7400004
+    second: TCP_Male_Armature|SUPRA_9542|C4D Animation Take|Layer0
+  - first:
+      74: 7400006
+    second: TCP_Male_Idle_01
+  - first:
+      74: 7400008
+    second: TCP_Male_Armature|TCP_Male_Idle_01 (1)
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      41386430: 2186277476908879412
+    second: ImportLogs
   externalObjects: {}
   materials:
-    importMaterials: 0
+    materialImportMode: 0
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -121,6 +295,7 @@ ModelImporter:
     - serializedVersion: 16
       name: TCP_Male_Idle_01
       takeName: TCP_Male_Armature|TCP_Male_Idle_01
+      internalID: 0
       firstFrame: 0
       lastFrame: 192
       wrapMode: 0
@@ -153,6 +328,7 @@ ModelImporter:
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -160,18 +336,19 @@ ModelImporter:
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -180,10 +357,10 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 1
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human:
     - boneName: Hips
       humanName: Hips
@@ -1648,14 +1825,17 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 9ad19c3a7738fb74bba66ffc748a8290,
     type: 3}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 3
   humanoidOversampling: 1
+  avatarSetup: 2
   additionalBone: 0
   userData: 
   assetBundleName: 
