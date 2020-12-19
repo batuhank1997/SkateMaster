@@ -124,6 +124,8 @@
     <Compile Include="Assets\Toon City People\Scripts\SkirtSelector.cs" />
     <Compile Include="Assets\Toon City People\Scripts\TieSelector.cs" />
     <Compile Include="Assets\Toon City People\Scripts\WatchSelector.cs" />
+    <Compile Include="Assets\Toon City\Scripts\PropMovementScript.cs" />
+    <Compile Include="Assets\Toon City\Scripts\RotatingScript.cs" />
     <None Include="Assets\Toon City People\ToonShading\Shaders\ToonBasic.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
@@ -144,7 +146,9 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\Toon City People\Documentation\URP_Instructions.txt" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\Toon City\ToonShading\Shaders\ToonBasic.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\Toon City\Documentation\ReadMe.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
